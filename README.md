@@ -1,2 +1,3 @@
 # SCILEARN
-Web Development Project
+Web Development Project.
+During the second semester of the first year, my colleague and I worked on a project for the Introduction to Web Programming class. We created a website called SCILEARN using HTML, CSS, JavaScript, with API integration, and PHP. The project was centered around learning about Astronomy using courses, quizzes and flashcards for kids and young adults with learning disabilities, with a NASA API with The Picture of the Day. The website allows its users to learn about each planet of the Solar System, about the sun, and the Big Bang, with the information simplified to be accessible to kids, as well as people with learning disabilities who want to learn a technical and difficult subject more simply. The users can verify their knowledge with flashcards and quizzes, as well as see the Astronomical Picture of the Day with the NASA API integrated we integrated.
