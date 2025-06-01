@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Descovering Mercury</h3>
+     <div class="pagination">
+                 <a href="thesun.html">❮</a>
+                  <a href="venus.html">❯</a>
+                </div>
+      <h4>Welcome to our cosmic journey! Today, we're setting our sights on Mercury, the closest planet to the sun. Let's explore this fascinating world together!</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Mercury is one of the planets in our solar system. It's the smallest planet, but it's still an important part of our cosmic neighborhood. It's like a tiny, rocky world orbiting around the sun.</p>
+       <br>
+          <p style="font-size: 22px">Consequently, one solar day (sunrise to sunrise) on Mercury lasts for around 176 Earth days: twice the planet's sidereal year. This means that one side of Mercury will remain in sunlight for one Mercurian year of 88 Earth days; while during the next orbit, that side will be in darkness all the time until the next sunrise after another 88 Earth days.</p><br>
+       <p style="font-size: 22px">Mercury has a rocky surface that looks grayish-brown. It's covered in craters, which are like scars from rocks and asteroids hitting its surface a long time ago. Because Mercury doesn't have much air or water, it looks very dry and barren, with no plants or oceans like we have on Earth.</p>
+       <br>
+       <p style="font-size: 22px">Mercury is a planet of extremes! Since it's so close to the sun, it gets very hot during the day. In fact, it's one of the hottest planets in our solar system! But at night, when it's on the side away from the sun, it gets very cold because it doesn't have much air to hold onto the heat.</p>
+       <br>
+          <p style="font-size: 22px">As of the early 2020s, many broad details of Mercury's geological history are still under investigation or pending data from space probes. Like other planets in the Solar System, Mercury was formed approximately 4.5 billion years ago.</p><br>
+       <p style="font-size: 22px">Interesting Facts About Mercury:<br>
+        1.Size: Despite being the smallest planet, Mercury is still larger than our moon.<br>
+        2.Temperature: Mercury's surface can reach scorching temperatures during the day, soaring up to about 800 degrees Fahrenheit (430 degrees Celsius)! That's hot enough to melt some metals.<br>
+        3.Rotation: Mercury spins slowly compared to Earth. One day on Mercury, which is the time it takes for it to rotate once on its axis, is about 59 Earth days. But its year, which is the time it takes to orbit around the sun, is only about 88 Earth days!</p>
+       <br><br>
+       <p style="font-size: 22px">Scientists have sent spacecraft to explore Mercury up close. One of the spacecraft is called MESSENGER, and it took lots of pictures and measurements to help us learn more about this little planet. We've learned so much about Mercury's surface, its atmosphere (even though it's very thin), and its magnetic field.</p>
+        <br><br>
+        <p style="font-size: 22px">Mercury may be small, but it's packed with wonders and mysteries waiting to be uncovered. Every discovery we make about this tiny world brings us closer to understanding the vastness and complexity of our solar system.</p>
+       </asid>
+       <div class="min">
+           <img src="images/mercurystructure.jpg" alt="Structure of Mercury" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/Unmasking_the_Secrets_of_Mercury.jpg" alt="Mercury" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

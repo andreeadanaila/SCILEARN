@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Pluto's Secrets: Journey to the Dwarf Planet!</h3>
+     <div class="pagination">
+                 <a href="neptune.html">❮</a>
+                  <a href="stars.html">❯</a>
+                </div>
+      <h4>Hey there, space adventurer! Are you ready to embark on an exciting journey to one of the coolest places in our solar system? Welcome to "Pluto's Secrets: Journey to the Dwarf Planet!"</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Pluto is a relatively small planetoid, smaller than the Earth's moon. It is thought that Pluto is made up of a mantle of ice (mostly Nitrogen ice), which is about 50% of its mass, and a rocky core, which makes up the other 50% of its mass.</p>
+       <br>
+       <p style="font-size: 22px">Pluto has a unique orbit around the sun. Rather than a round or circular orbit around the sun, like the 8 planets, Pluto's orbit is more egg-shaped. At its closest point to sun, Pluto is around 2.8 billion miles away. At its furthest point, it is around 5 billion miles from the sun. When Pluto is closest to the sun, it has a thin atmosphere. As Pluto moves away from the sun, it gets so cold that the atmosphere starts to freeze and fall to the ground.</p>
+       <br>
+       <p style="font-size: 22px">Pluto has a hard, rocky surface like Earth. It is much smaller than Earth. Pluto is so far away from the sun, that it gets very little energy from the sun and is extremely cold.</p>
+       <br>
+       <p style="font-size: 22px">For nearly 100 years scientists had suspected there was a 9th planet somewhere beyond Neptune. This was based on changes in Neptune's and Uranus' orbit that indicated a large mass was tugging on the planets. They called this mysterious 9th planet Planet X.</p>
+       <br><br>
+       <p style="font-size: 22px">In 1930 a young astronomer, Clyde Tombaugh, found Planet X after a year of searching.</p>
+        <br><br>
+        <p style="font-size: 22px">Since then much more has been learned about Pluto using telescopes. The first space probe to visit Pluto was the New Horizons in 2015. The New Horizons flew past Pluto coming within 7,800 miles of the dwarf planet's surface. It took pictures and mapped the chemical compositions of the surface of Pluto and its moon Charon.</p>
+        <br><br>
+          <p style="font-size: 22px">Cool facts about Pluto:<br>
+        1.Pluto's strange orbit around the sun crosses Neptune's orbit. As a result, for 20 years of its 248 year orbit around the sun, Pluto is closer to the sun than Neptune.<br>
+        2.Pluto was named by an 11 year old girl, Venetia Burney. It gets its name from Pluto the Roman god of the Underworld.<br>
+        3.It takes a radio signal moving at the speed of light around 4 hours to travel from Earth to Pluto.<br>
+        4.Pluto has an interesting orbit in that it orbits on its side in relation to the Sun. Most planets, other than Uranus, orbit like a top in relation to the Sun.<br>
+        5.A person standing on Pluto would weigh around 1/15th of what they weigh on Earth.
+</p>
+       </asid>
+       <div class="min">
+           <img src="images/plutostructure.jpg" alt="Structure of Pluto" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/pluto.jpg" alt="Pluto" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

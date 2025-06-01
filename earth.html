@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Discovering Earth, Our Home</h3>
+     <div class="pagination">
+                 <a href="venus.html">❮</a>
+                  <a href="mars.html">❯</a>
+                </div>
+      <h4>Welcome to the amazing world of Earth! Today, we're going to explore the wonders of our planet and learn what makes it so special.
+</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Earth is the third planet from the sun in our solar system. It's a rocky planet with a diverse and vibrant environment that supports life. From the depths of the oceans to the heights of the mountains, Earth is teeming with different ecosystems and living organisms.</p>
+       <br>
+       <p style="font-size: 22px">Earth is a beautiful and diverse planet with stunning landscapes and breathtaking views. It's covered in vast oceans, which make up about 71% of its surface, and expansive continents. The land is home to mountains, valleys, forests, deserts, and more. From space, Earth appears as a brilliant blue marble with swirling white clouds.</p>
+       <br>
+       <p style="font-size: 22px">Earth is just right for life as we know it. It has a unique combination of factors that make it habitable, including:<br>
+        1.Atmosphere: Earth has an atmosphere composed mainly of nitrogen and oxygen, which provide the air we breathe and protect us from the sun's harmful rays.<br>
+        2.Water: Earth is often called the "Blue Planet" because of its abundance of water. Water is essential for life, and Earth has oceans, rivers, lakes, and glaciers that support a wide variety of organisms.<br>
+        3.Temperature: Earth has a moderate climate with temperatures that allow for the existence of liquid water, which is essential for life to thrive.</p>
+       <br>
+       <p style="font-size: 22px">Interesting Facts About Earth:<br>
+        1.Life: Earth is the only planet in the solar system known to support life. It's home to an incredible diversity of organisms, from tiny microorganisms to giant whales.<br>
+        2.Rotation and Orbit: Earth rotates on its axis, which gives us day and night, and it orbits around the sun, which gives us seasons.<br>
+        3.Moon: Earth has one moon, which orbits around it and affects tides in the oceans.</p>
+       <br><br>
+       <p style="font-size: 22px">Scientists and explorers have been studying Earth for centuries, uncovering its secrets and learning more about its complex systems. From mapping the ocean floor to studying the atmosphere, there's always more to discover about our home planet.</p>
+        <br><br>
+        <p style="font-size: 22px">Earth is a precious and unique planet, and it's our responsibility to take care of it. By appreciating its beauty and understanding its importance, we can work together to protect and preserve Earth for future generations to enjoy.</p>
+        <br>
+        <p style="font-size: 22px">The Moon is Earth's closest friend in space. It’s the big, bright ball you see in the night sky, and sometimes during the day too! The Moon is made of rock and dust. Its surface is covered with craters, which are big holes made by space rocks hitting the Moon.</p>
+        <br><br>
+        <p style="font-size: 22px">The Moon doesn’t make its own light. It shines because it reflects light from the Sun. That’s why it looks so bright in the night sky.</p>
+        <br><br>
+        <p style="font-size: 22px">Quick Facts:<br>
+        1.Size: The Moon is much smaller than Earth. You could fit about 50 Moons inside Earth!<br>
+        2.Distance: The Moon is about 238,855 miles away from us. That’s like traveling around the Earth 10 times!<br>
+        3.Gravity: The Moon has less gravity than Earth. If you weigh 60 pounds on Earth, you’d only weigh 10 pounds on the Moon!</p>
+        <br><br>
+        <p style="font-size: 22px">The Moon changes shape in the sky. These shapes are called phases:<br>
+        New Moon: We can’t see the Moon because it’s between Earth and the Sun.<br>
+        Crescent Moon: A small part of the Moon is lit up, like a tiny sliver.<br>
+        First Quarter: Half of the Moon is visible.<br>
+        Full Moon: The entire Moon is lit up and round.<br>
+        Last Quarter: Half of the Moon is visible again, but the other half from the First Quarter.<br>
+        Crescent Moon: A small part of the Moon is lit up again before it becomes a New Moon.</p>
+        <br><br>
+        <p style="font-size: 22px">The Moon helps control the tides in Earth’s oceans. It also makes our nights brighter and inspires stories, songs, and dreams.</p>
+        <br><br>
+        <p style="font-size: 22px">Remember, the Moon is always there, watching over us and making the night sky beautiful. It’s our shiny neighbor in space!</p>
+       </asid>
+       <div class="min">
+           <img src="images/structureearth.jpg" alt="Structure of the Earth" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/earth.jpg" alt="The Earth" onclick="openOverlay(this.src)">
+           <img src="images/moonstructure.jpg" alt="Structure of the Moon" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

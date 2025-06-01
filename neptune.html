@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Exploring Neptune: The Blue Giant</h3>
+     <div class="pagination">
+                 <a href="uranus.html">❮</a>
+                  <a href="pluto.html">❯</a>
+                </div>
+      <h4>Welcome to the captivating world of Neptune! Join us as we embark on a journey to discover the mysteries of the eighth planet from the sun.</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Neptune is the eighth and farthest planet from the sun in our solar system. It's a giant gas planet, similar to Uranus, and it's famous for its striking blue color.</p>
+       <br>
+       <p style="font-size: 22px">Neptune is a beautiful blue ball of gas with swirling white clouds. Its atmosphere is filled with hydrogen, helium, and methane, which gives it its blue hue.</p>
+       <br>
+       <p style="font-size: 22px">Neptune is a cold and windy planet, with temperatures dropping to extremely low levels. Its atmosphere is whipped by powerful winds, and it's not a place where humans could live.</p>
+       <br>
+       <p style="font-size: 22px">Cool Facts About Neptune:<br>
+        1.Blue Color: Neptune's blue color comes from methane gas in its atmosphere. Methane absorbs red light and reflects blue light, giving the planet its distinctive hue.<br>
+        2.Great Dark Spot: Like Jupiter's Great Red Spot, Neptune has a Great Dark Spot, which is a giant storm in its atmosphere. It was first observed by the Voyager 2 spacecraft in 1989.<br>
+        3.Moons: Neptune has over a dozen moons, with the largest one named Triton. Triton is unique because it orbits Neptune in the opposite direction of the planet's rotation.<br>
+</p>
+       <br><br>
+       <p style="font-size: 22px">NASA's Voyager 2 spacecraft flew by Neptune in 1989, providing us with our first close-up views of the planet and its moons. Since then, astronomers have continued to study Neptune using telescopes and space-based observatories.</p>
+        <br><br>
+        <p style="font-size: 22px">Neptune is a mysterious and beautiful planet, with its vibrant blue color and turbulent atmosphere. By studying Neptune, we gain valuable insights into the diversity of worlds in our solar system and the wonders of the universe.</p>
+       </asid>
+       <div class="min">
+           <img src="images/neptunestructure.jpg" alt="Structure of Neptune" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/neptune.jpg" alt="Neptune" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

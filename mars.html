@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Discovering Mars: The Red Planet</h3>
+     <div class="pagination">
+                 <a href="earth.html">❮</a>
+                  <a href="jupiter.html">❯</a>
+                </div>
+      <h4>Welcome to the captivating world of Mars! Let's embark on an exciting journey to learn all about the mysteries of the Red Planet.</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Mars is the fourth planet from the sun in our solar system, located between Earth and Jupiter. It's often called the "Red Planet" because of its rusty-red color, caused by iron oxide, also known as rust.</p>
+       <br>
+          <p style="font-size: 22px">Mars was formed about 4.5 billion years ago. In its early years, Mars was hit by many meteorites, creating craters and valleys. It might have even had oceans of water! Later, around 3.5 billion years ago, volcanoes erupted and huge floods carved out big channels. Today, wind shapes the surface of Mars. Because of its interesting history, scientists are curious about the possibility of past or present life on Mars.</p>
+       <p style="font-size: 22px">Mars has a rugged and diverse landscape, with rocky mountains, vast plains, deep valleys, and giant volcanoes. From space, Mars appears as a reddish-brown sphere with dark regions and polar ice caps made of frozen water and carbon dioxide.</p>
+       <br>
+       <p style="font-size: 22px">Mars is a cold and dry world with a thin atmosphere composed mainly of carbon dioxide. It experiences extreme temperatures, with freezing cold nights and relatively warm days. Due to its thin atmosphere, Mars lacks the protective shield that Earth's atmosphere provides, making it vulnerable to harmful radiation from space.</p>
+       <br>
+       <p style="font-size: 22px">Cool Facts About Mars:<br>
+        1.Olympus Mons: Mars is home to Olympus Mons, the largest volcano in the solar system. It towers over the Martian landscape, reaching heights of about 13.6 miles (22 kilometers) and covering an area larger than the state of Arizona.<br>
+        2.Valles Marineris: Mars boasts Valles Marineris, a vast canyon system that stretches over 2,500 miles (4,000 kilometers) long and up to 7 miles (11 kilometers) deep, making it the largest canyon in the solar system.<br>
+        3.Water on Mars: Scientists have found evidence suggesting that Mars may have had liquid water flowing on its surface in the past. They've discovered dried-up riverbeds, ancient lake beds, and minerals that form in the presence of water, indicating that Mars was once a wetter and possibly habitable planet.</p>
+       <br><br>
+       <p style="font-size: 22px">Humans have been fascinated by Mars for centuries, and we've sent numerous spacecraft to study it up close. These robotic explorers have captured stunning images, collected data on Mars' atmosphere, geology, and climate, and searched for signs of past or present life.</p>
+        <br><br>
+        <p style="font-size: 22px">Mars continues to intrigue and inspire us as we strive to unlock its secrets and unravel the mysteries of our neighboring planet. By studying Mars, we gain valuable insights into planetary processes, the history of our solar system, and the potential for life beyond Earth.</p>
+       </asid>
+       <div class="min">
+           <img src="images/marsstructure.jpg" alt="Structure of Mars" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/mars.webp" alt="Mars" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

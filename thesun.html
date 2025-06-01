@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>The Sun - Our Brilliant Star</h3>
+     <div class="pagination">
+                 <a href="bigbang.html">❮</a>
+                  <a href="mercury.html">❯</a>
+                </div>
+      <h4>Welcome to the world of the sun! Have you ever wondered what makes our days bright and warm? Let's dive into the fascinating world of the sun and learn more about this shining star!</h4>
+      
+      <br><br>
+      <asid>
+       <p style="font-size: 22px"> The Sun is the star at the center of our Solar System. It is a gigantic ball of hot gases, mainly hydrogen and helium. It's like a giant fire burning in space! Compared to Earth, the sun is huge. In fact, you could fit more than a million Earths inside the sun!</p>
+       <br>
+       <p style="font-size: 22px">When you look up at the sky during the day, you see the sun as a big, round, glowing ball of light. Sometimes, if you look closely (but please don't stare directly at it!), you might see dark spots on the sun. These spots are called sunspots, and they're cooler areas on the sun's surface.</p>
+       <br>
+       <p style="font-size: 22px">The Sun today is roughly halfway through the most stable part of its life. It has not changed dramatically in over four billion years and will remain fairly stable for about five billion more.</p>
+       <br>
+       <p style="font-size: 22px">The Sun has eight known planets orbiting it. This includes four terrestrial planets (Mercury, Venus, Earth, and Mars), two gas giants (Jupiter and Saturn), and two ice giants (Uranus and Neptune). The Solar System also has nine bodies generally considered as dwarf planets and some more candidates, an asteroid belt, numerous comets, and a large number of icy bodies which lie beyond the orbit of Neptune. Six of the planets and many smaller bodies also have their own natural satellites: in particular, the satellite systems of Jupiter, Saturn, and Uranus are in some ways like miniature versions of the Sun's system.</p>
+       <br><br>
+       <p style="font-size: 22px">The sun does many amazing things that are crucial for life on Earth:<br>
+           1. Gives Light: The sun shines brightly and lights up our world during the day.<br>
+           2. Gives Heat: Its warmth makes our days comfortable and helps keep the planet at the right temperature for life to thrive.<br>
+           3. Helps Plants Grow: Plants need sunlight to make their food through a process called photosynthesis. So, the sun is like a big chef that helps plants grow big and strong.<br>
+           4. Makes Weather: The sun's heat causes the air to move around, which creates wind. It also evaporates water, which forms clouds and eventually brings rain.</p>
+        <br><br>
+        <p style="font-size: 22px">Interesting Facts About the Sun:<br>
+            1.Age: Believe it or not, the sun is about 4.6 billion years old! It's been shining for a very, very long time.<br>
+            2.Size: The sun is not just big; it's enormous! Its diameter is about 109 times that of Earth.<br>
+            3.Distance: Even though the sun feels close to us, it's actually very far away. It takes about 8 minutes for sunlight to travel from the sun to Earth. So, when you see the sun, you're seeing it as it was 8 minutes ago!</p>
+        <br><br>
+          <p style="font-size: 22px">The sun is truly a marvel of nature, providing light, warmth, and energy to our planet. It's essential for life as we know it. So, the next time you bask in the sun's glow, remember to appreciate this incredible star and stay safe while enjoying its rays!</p>
+       </asid>
+       <div class="min">
+           <img src="images/sunstructure.jpg" alt="Structure of the Sun" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/sun.webp" alt="The Sun" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

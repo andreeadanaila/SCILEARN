@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="#"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="#"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Big Bang Wonders: Exploring the Universe</h3>
+			<div class="pagination">
+                 <a href="courses.html">❮</a>
+                  <a href="thesun.html">❯</a>
+                </div>
+      <h4>Hey there, space explorer! Get ready to blast off into an awesome adventure all about the Big Bang—the cool event that started our whole universe!</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Imagine the universe started as a tiny dot. A long, long time ago, this dot exploded with a big bang! This explosion made everything we see today—stars, planets, and even us!<br>The Big Bang was like a giant fireworks show that created the whole universe. It happened a very, very long time ago, and everything has been growing and spreading out ever since. That's why we have space and all the cool things in it.</p>
+       <br>
+       <p style="font-size: 22px">Most astronomers believe the Universe began in a Big Bang about 14 billion years ago. At that time, the entire Universe was inside a bubble that was thousands of times smaller than a pinhead. It was hotter and denser than anything else we can imagine.</p>
+       <br>
+       <p style="font-size: 22px">If you had to pick one scientist who created the idea, it would have to be Georges Lemaître, a Belgian priest, mathematician, and astronomer. In 1927, he first had the idea that the universe began as a single point – like the pinhead mentioned earlier – and then stretched and expanded into what we know now. Lemaître was 33 at the time and working as a professor of physics at a university, but this skyrocketed him to international acclaim in his field. </p>
+       <br>
+       <p style="font-size: 22px">At the time of the big bang the universe was hot and tightly packed. After the big bang the universe quickly began cooling and expanding. Within minutes, particles of matter formed atoms of hydrogen and helium. Those atoms later formed stars, which led to the creation of planets. According to astronomers, the universe is still cooling and expanding.</p>
+       <br><br>
+       <p style="font-size: 22px">Cool facts about the Big Bang:<br>
+        1.The study of the universe, including its creation and its development, is called cosmology.<br>
+        2.We used the term ‘about 14 billion years old’ earlier, but that’s not accurate enough for scientists! It is believed by astronomers that the universe is 13.8 billion years old.<br>
+        3.Even though Lemaître came up with the idea in 1927, the theory of the Big Bang really only began to take root in the 1940s. It caused a lot of debate between astronomers who couldn’t decide if it was true or not, as there wasn’t a lot of evidence at the time!<br>
+        4.The earliest whole stars and galaxies were created around 560 million years after the Big Bang.<br>
+        5.The name ‘Big Bang’ came from one of the theory’s critics, Fred Hoyle. It just so happened to catch on with the public!<br></p>
+        <br><br>
+        <p style="font-size: 22px">Wow, space explorer! You've just taken an incredible journey through the mind-blowing story of the Big Bang, the amazing event that kick-started our entire universe!</p>
+        <br><br>
+          <p style="font-size: 22px">From imagining the universe as a tiny dot to picturing the massive explosion that created everything we see today—stars, planets, and even us—you've traveled back in time to witness the birth of it all. The Big Bang was like the ultimate fireworks show, sparking the beginning of space and all the incredible things within it.</p>
+       </asid>
+       <div class="min">
+           <img src="images/bigbang.jpg" alt="Big Bang" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/Universe_History_2.webp" alt="History of the Universe" onclick="openOverlay(this.src)">
+           <img src="images/Arrow_JPG-1200x833.webp" alt="Big Bang" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

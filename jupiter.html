@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Discovering Jupiter: The King of the Planets</h3>
+     <div class="pagination">
+                 <a href="mars.html">❮</a>
+                  <a href="saturn.html">❯</a>
+                </div>
+      <h4>Welcome to the grandeur of Jupiter! Today, we embark on an extraordinary journey to explore the largest planet in our solar system, Jupiter, and uncover its marvels.</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Jupiter is the fifth planet from the sun and the largest planet in our solar system. It's a gas giant, primarily composed of hydrogen and helium, similar to a big ball of swirling gases.</p>
+       <br>
+       <p style="font-size: 22px">Jupiter is a colossal sphere enveloped in a thick layer of swirling clouds, showcasing vibrant bands of colors such as red, orange, yellow, and white. Prominently visible on its surface is the Great Red Spot, a gigantic storm that has been raging for centuries and is larger than the entire Earth!</p>
+       <br>
+       <p style="font-size: 22px">Jupiter is a behemoth of a planet, with a diameter over 11 times that of Earth's. Despite its immense size, Jupiter is not solid like Earth. Instead, it's composed mainly of gases and has no solid surface. If one could stand on Jupiter, they would gradually sink into its atmosphere due to the intense pressure.</p>
+       <br>
+       <p style="font-size: 22px">Cool Facts About Jupiter:<br>
+        1.Great Red Spot: The Great Red Spot is one of Jupiter's most famous features. It's an enormous storm system that has been churning for at least 400 years, possibly longer. This storm is so massive that it could fit several Earths within its boundaries.<br>
+        2.Moons: Jupiter boasts an extensive family of over 70 moons, with the four largest moons known as the Galilean moons: Io, Europa, Ganymede, and Callisto. These moons were discovered by the astronomer Galileo Galilei in 1610.<br>
+        3.Rings: While not as prominent as Saturn's majestic rings, Jupiter does possess a faint ring system consisting of dust particles. These rings are not easily visible from Earth but have been detected by spacecraft.</p>
+       <br><br>
+       <p style="font-size: 22px">Numerous spacecraft have ventured to Jupiter to study it up close, including the Juno spacecraft, which arrived in 2016. These missions have provided valuable insights into Jupiter's atmosphere, magnetic field, and moons, unraveling many mysteries surrounding this colossal planet.</p>
+        <br><br>
+        <p style="font-size: 22px">Jupiter stands as a colossal giant in our solar system, captivating us with its mesmerizing beauty and awe-inspiring features. By delving into the mysteries of Jupiter, we gain a deeper understanding of the vastness and complexity of our cosmic neighborhood.</p>
+        <br><br>
+          <p style="font-size: 22px"></p>
+       </asid>
+       <div class="min">
+           <img src="images/jupiterstructure.jpg" alt="Structure of Jupiter" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/jupiter.jpg" alt="Jupiter" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

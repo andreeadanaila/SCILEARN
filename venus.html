@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Discovering Venus</h3>
+     <div class="pagination">
+                 <a href="mercury.html">❮</a>
+                  <a href="earth.html">❯</a>
+                </div>
+      <h4>Welcome to our cosmic adventure! Today, let's embark on a journey to learn all about Venus, the dazzling jewel of the night sky, and the second planet from the sun.</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Venus is one of the planets in our solar system. It's often called Earth's sister planet because they are similar in size and are relatively close to each other in distance from the sun. Like Earth, Venus is a rocky planet. </p>
+       <br>
+       <p style="font-size: 22px">Venus is a captivating world wrapped in mystery. Its surface is hidden beneath thick clouds made of sulfuric acid, which reflect sunlight and make Venus appear incredibly bright from Earth. Underneath the clouds, Venus is rocky and mountainous, with vast plains and deep valleys. It's a world of extremes, with temperatures hot enough to melt lead!</p>
+       <br>
+       <p style="font-size: 22px">The rotation of Venus has been slowed and turned against its orbital direction (retrograde) by the currents and drag of its atmosphere. It takes 224.7 Earth days for Venus to complete an orbit around the Sun, and a Venusian solar year is just under two Venusian days long.</p><br>
+       <p style="font-size: 22px">Venus is a furnace of heat and pressure. Its thick atmosphere traps heat from the sun, creating a runaway greenhouse effect that makes Venus the hottest planet in our solar system, even hotter than Mercury! The pressure on Venus is so intense that it would crush anything that tried to land there. It's not a very friendly place for living creatures like us!</p>
+       <br>
+       <p style="font-size: 22px">Interesting Facts About Venus:<br>
+        1.Brightness: Venus is often called the "morning star" or the "evening star" because it's one of the brightest objects in the sky. You can see it shining brightly just before sunrise or just after sunset.<br>
+        2.Rotation: Venus spins very slowly, and it spins in the opposite direction compared to most other planets. This means the sun rises in the west and sets in the east on Venus, which is the opposite of what we see on Earth!<br>
+        3.Atmosphere: Venus has a thick atmosphere made mostly of carbon dioxide, with clouds of sulfuric acid. These clouds reflect sunlight and contribute to Venus' extreme heat.<br></p>
+       <br><br>
+       <p style="font-size: 22px">Scientists have sent several spacecraft to explore Venus and study its mysterious atmosphere and surface. These spacecraft have used special instruments to peer through the thick clouds and map Venus' surface, revealing volcanoes, mountains, and other geological features. While we've learned a lot about Venus, there are still many mysteries waiting to be uncovered.</p>
+        <br><br>
+        <p style="font-size: 22px">Venus is a world of wonder and intrigue, with its scorching temperatures, thick clouds, and unique geological features. As we continue to study Venus, we'll gain a deeper understanding of this enigmatic planet and its place in the vast cosmos.</p>
+       </asid>
+       <div class="min">
+           <img src="images/venusstructure.jpg" alt="Structure of Venus" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/ultraviolet-light-Venus-spacecraft-Pioneer-Orbiter-bands-Feb-26-1979.webp" alt="The Sun" onclick="openOverlay(this.src)" style="height:60%">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

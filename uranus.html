@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Unveiling Uranus: The Mysterious Ice Giant</h3>
+     <div class="pagination">
+                 <a href="saturn.html">❮</a>
+                  <a href="neptune.html">❯</a>
+                </div>
+      <h4>Welcome to the enigmatic world of Uranus! Let's embark on a fascinating journey to explore the seventh planet from the sun and unravel its intriguing secrets.</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Uranus is the seventh planet from the sun and the third-largest planet in our solar system. It belongs to a class of planets known as ice giants, characterized by their composition of water, ammonia, and methane ices.</p>
+       <br>
+       <p style="font-size: 22px">Uranus is a pale blue-green orb enveloped in a thick atmosphere of hydrogen and helium gases, with traces of methane that give it its distinctive color. It has faint bands of clouds that swirl around its surface, but unlike Jupiter and Saturn, Uranus lacks prominent atmospheric features.</p>
+       <br>
+       <p style="font-size: 22px">Uranus is a frigid and distant world, with temperatures plummeting to extreme lows due to its great distance from the sun. Its atmosphere is composed primarily of hydrogen and helium, with methane gas contributing to its coloration and imparting a unique appearance.</p>
+       <br>
+       <p style="font-size: 22px">Cool Facts About Uranus:<br>
+        1.Sideways Spin: Uranus is famously known for its peculiar tilt, as it rotates on its side compared to other planets in the solar system. This unique axial tilt causes Uranus to appear to roll along its orbit, with its poles almost in the plane of its orbit around the sun.<br>
+        2.Rings and Moons: Uranus possesses a system of rings composed of dark particles, as well as a diverse array of over two dozen moons. Among its moons, Miranda stands out with its varied terrain, featuring cliffs and valleys that rival the height of Mount Everest.<br>
+        3.Discovery: Uranus was first discovered by the British astronomer William Herschel in 1781. Using a telescope, Herschel observed Uranus as a distant point of light moving against the background stars, leading to its recognition as a new planet.
+</p>
+       <br><br>
+       <p style="font-size: 22px">In 1986, NASA's Voyager 2 spacecraft conducted a close flyby of Uranus, providing scientists with valuable data and images of the planet's atmosphere, rings, and moons. While Voyager 2's visit remains the only spacecraft mission to Uranus to date, astronomers continue to study the planet from Earth using telescopes and space-based observatories.</p>
+        <br><br>
+        <p style="font-size: 22px">Uranus stands as a captivating and mysterious world, offering valuable insights into the diversity and complexity of our solar system. By delving into the secrets of Uranus, we deepen our understanding of planetary science and the wonders of the cosmos.</p>
+       </asid>
+       <div class="min">
+           <img src="images/uranusstructure.jpg" alt="Structure of Uranus" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/uranus-1585338466.jpg" alt="Uranus" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

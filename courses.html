@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+     <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+     <a href="mission.html"><i class="fa fa-fw fa-child"></i>Our Mission</a>
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<aside>
+				<div class="aside">
+				<div class="row">
+  <div class="left" style="background-color:#03142c;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style=" background-color: #0a2b59">
+    <ul id="myMenu">
+      <li><a href="bigbang.html">Big Bang: Exploring the Universe</a></li>
+      <li><a href="thesun.html">The Sun: Our Brilliant Star</a></li>
+      <li><a href="mercury.html">Discovering Mercury</a></li>
+      <li><a href="venus.html">Discovering Venus</a></li>
+      <li><a href="earth.html">Discovering Earth, Our Home</a></li>
+      <li><a href="mars.html">Discovering Mars: The Red Planet</a></li>
+      <li><a href="jupiter.html">Discovering Jupiter: The King of the Planets</a></li>
+      <li><a href="saturn.html">Exploring Saturn: The Ringed Jewel of the Solar System</a></li>
+      <li><a href="uranus.html">Unveiling Uranus: The Mysterious Ice Giant</a></li>
+      <li><a href="neptune.html">Exploring Neptune: The Blue Giant</a></li>
+      <li><a href="pluto.html">Pluto's Secrets: Journey to the Dwarf Planet!</a></li>
+      <li><a href="stars.html">Galaxy Adventures: Exploring the Stars</a></li>
+      <li><a href="#">SOON: Stellar Explorers: Journeying Through the Starry Skies</a></li>
+      <li><a href="#">SOON: Magical Meteors</a></li>
+      <li><a href="#">SOON: Black Hole Bonanza: Exploring the Mysteries of Space!</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+    function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+        }
+    }
+}
+</script>
+			</aside>
+    <div class="main">
+	    <h3>Finished the Courses? Check our Review Section for FlashCards and Quizzes! <br>Make sure to check daily for new courses and reviews!</h3>
+	    <div class="center">
+	    <button class="button button2"><a href="review.html">Review</a></button>
+        </div>
+    </div>
+    
+		</div>
+	</section>
+</body>
+</html>

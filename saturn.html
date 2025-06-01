@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3> Exploring Saturn: The Ringed Jewel of the Solar System</h3>
+     <div class="pagination">
+                 <a href="jupiter.html">❮</a>
+                  <a href="uranus.html">❯</a>
+                </div>
+      <h4>Welcome to the captivating world of Saturn! Join us on an extraordinary journey to discover the wonders of the sixth planet from the sun, known for its breathtaking rings and intriguing moons.</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">Saturn is a gas giant, similar to Jupiter, and it's the second-largest planet in our solar system. Named after the Roman god of agriculture and wealth, Saturn is famous for its stunning rings, which make it one of the most recognizable planets in the night sky.</p>
+       <br>
+       <p style="font-size: 22px">Saturn is a giant ball of swirling gases, primarily hydrogen and helium, with colorful bands of clouds encircling its atmosphere. What sets Saturn apart are its magnificent rings, which consist of icy particles ranging in size from tiny grains to large chunks, creating a spectacular display when viewed from Earth.</p>
+       <br>
+       <p style="font-size: 22px">Saturn is a massive planet with a diameter of about nine times that of Earth. Despite its size, Saturn is less dense than water, which means it would float if placed in a bathtub large enough to accommodate it! Like Jupiter, Saturn has no solid surface; instead, it has a thick atmosphere that gradually transitions into a liquid interior as you move deeper into the planet.</p>
+       <br>
+       <p style="font-size: 22px">Cool Facts About Saturn:<br>
+        1.Ring System: Saturn's rings are composed of billions of icy particles, ranging in size from dust grains to small moons. These rings are divided into several main groups and named alphabetically in the order of their discovery, such as the A, B, and C rings.<br>
+        2.Moons: Saturn has over 80 moons, each with its own unique features and characteristics. The largest moon, Titan, is even bigger than the planet Mercury and has a thick atmosphere rich in nitrogen and methane.<br>
+        3.Hexagonal Storm: One of Saturn's most intriguing features is a hexagonal-shaped storm at its north pole, first discovered by the Voyager spacecraft in the 1980s. This unusual geometric structure is larger than Earth and has persisted for decades.
+</p>
+       <br><br>
+       <p style="font-size: 22px">Several spacecraft have visited Saturn, including the Cassini-Huygens mission, which spent over 13 years studying the planet and its moons. Through these missions, scientists have gained valuable insights into Saturn's atmosphere, ring system, and moons, expanding our understanding of this captivating world.</p>
+        <br><br>
+        <p style="font-size: 22px">Saturn remains a source of fascination and wonder, captivating astronomers and enthusiasts alike with its majestic rings, diverse moons, and enigmatic storms. By studying Saturn, we deepen our appreciation for the beauty and complexity of our solar system and the universe beyond.</p>
+       </asid>
+       <div class="min">
+           <img src="images/saturnstructure.jpg" alt="Structure of Saturn" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/Saturn_during_Equinox.jpg" alt="Saturn" onclick="openOverlay(this.src)">
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>

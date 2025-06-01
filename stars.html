@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Solar System</title>
+	
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="navbar">
+     <img src="images/logo.jpg" alt="Astronaut Logo">
+      <a href="faq.html"><i class="fa fa-fw fa-question-circle-o"></i>FAQ</a>
+       <a href="news.html"><i class="fa fa-fw fa-bullhorn"></i> APOD</a>
+        <a href="review.html"><i class="fa fa-fw fa-sticky-note-o"></i> Review</a> 
+        <a href="courses.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="mission.html"><i class="fa fa-fw fa-child"></i> Our Mission</a> 
+      <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+    <section>
+		<div class="container">
+			<h3>Galaxy Adventures: Exploring the Stars</h3>
+     <div class="pagination">
+                 <a href="pluto.html">❮</a>
+                </div>
+      <h4>Hey there, space explorer! Get ready to blast off into an amazing adventure all about galaxies—the gigantic star cities in our universe!</h4>
+      <br><br>
+      <asid>
+       <p style="font-size: 22px">A galaxy is a group of stars and other space stuff. The stars tend to spin around a center of high gravity, sort of like the planets spin around the Sun in the Solar System. Galaxies are huge and can have trillions (way bigger than billions!) of stars.<br>As big as galaxies are, they are generally separated by large areas of empty space. There are even clusters of galaxies that are separated by even larger areas of space. Scientists think there are over 100 billion galaxies. Wow, the universe is huge!</p>
+       <br>
+       <p style="font-size: 22px">We live in the galaxy called the Milky Way. The Milky Way is part of a cluster of around 3,000 galaxies called the Local Group. The Milky Way is a spiral shaped galaxy and is estimated to be made up of around 300 billion stars.</p>
+       <br>
+       <p style="font-size: 22px">There are four main types of galaxies depending on their shape:<br>
+        1.Spiral - The spiral galaxy has a number of long arms that are spiraling around the center. In the center of the spiral galaxy are older stars while the arms are generally made of new stars.<br>
+        2Barred spiral - This type of galaxy is similar to the spiral but has a long bar in the middle with spirals coming off the ends.<br>
+        3.Elliptical - A mass of stars clumped together in the shape of an elliptical disc.<br>
+        4.Irregular - Any other shaped galaxy is generally lumped into the category of irregular. It is thought that most irregular galaxies are formed by two of the other three types of galaxies crashing into each other.</p>
+       <br>
+       <p style="font-size: 22px">Fun Facts about Galaxies:<br>
+        1.The word galaxy comes from the Greek word for "milky".<br>
+        2.Some scientists think that most of the mass of a galaxy is made up of a mysterious substance called dark matter.<br>
+        3.It is thought that there is a massive black hole in the center of galaxies.<br>
+        4.The closest galaxy to the Milky Way is Andromeda, which is around 2.6 million light years away from us.<br>
+        5.Many galaxies are more than 100,000 light years across in distance.<br>
+        6.It takes over two hundred million years for the sun to orbit the center of the galaxy. This is called a galactic year.<br>
+</p>
+       <br><br>
+       <p style="font-size: 22px">Congratulations, space explorer! You've just embarked on an incredible journey through the vast and wondrous realm of galaxies.</p>
+        <br><br>
+        <p style="font-size: 22px">So whether you're gazing up at the night sky, peering through a telescope, or simply imagining the wonders of the cosmos, let your curiosity continue to soar. The universe is vast, and there's always more to explore! Keep looking up, space explorer, and never stop dreaming of the stars. Until next time, keep exploring and keep reaching for the stars!</p>
+       </asid>
+       <div class="min">
+           <img src="images/Carina_Nebula-1.webp" alt="Carina Nebula" onclick="openOverlay(this.src)">
+           <br><br>
+           <img src="images/stars.jpg" alt="The Stars" onclick="openOverlay(this.src)">
+           <br><br>
+        <img src="images/star.jpg" alt="The Stars" onclick="openOverlay(this.src)">
+
+       </div>
+        </div>
+	</section>
+	<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" src="">
+</div>
+
+<script>
+function openOverlay(src) {
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('overlayImage').src = src;
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
+    </script>
+</body>
+</html>
